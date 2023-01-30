@@ -6,7 +6,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import com.yudiz.skeleton.model.api.ApiCallback
-import com.yudiz.skeleton.model.api.ApiServiceProvider
+import com.yudiz.skeleton.model.api.ApiRepository
 import com.yudiz.skeleton.model.data.ProductsRes
 import com.yudiz.skeleton.utils.Utils
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -18,7 +18,7 @@ import javax.inject.Inject
 @HiltViewModel
 class ListVM @Inject constructor(
     @ApplicationContext val context: Context,
-    private var apiServiceProvider: ApiServiceProvider,
+    private var apiServiceProvider: ApiRepository,
 ) :
     BaseVM() {
 

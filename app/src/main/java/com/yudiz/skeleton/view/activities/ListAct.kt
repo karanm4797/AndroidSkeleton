@@ -15,7 +15,6 @@ class ListAct : BaseAct<ActivityListBinding, ListVM>(R.layout.activity_list) {
 
     override fun init() {
 
-        setProgressbar()
         progress.show()
         vm.getPosts()
 

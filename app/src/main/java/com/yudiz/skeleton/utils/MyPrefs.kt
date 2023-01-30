@@ -8,7 +8,6 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import javax.inject.Inject
 import javax.inject.Singleton
 
-
 @Singleton
 class MyPrefs @Inject constructor(@ApplicationContext context: Context) {
 

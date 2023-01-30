@@ -12,7 +12,7 @@ import javax.inject.Inject
 
 @Module
 @InstallIn(SingletonComponent::class)
-class ApiServiceProvider @Inject constructor(
+class ApiRepository @Inject constructor(
     @ApplicationContext val context: Context,
     private val apiServices: ApiServices,
 ) {
@@ -34,7 +34,6 @@ class ApiServiceProvider @Inject constructor(
     }
 
     suspend fun getProducts(): ApiCallback<ProductsRes> {
-        val call = apiServices.getProducts()
-        return parseResponse { call }
+        return parseResponse { apiServices.getProducts() }
     }
 }
