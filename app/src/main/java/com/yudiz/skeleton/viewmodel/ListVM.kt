@@ -22,16 +22,11 @@ class ListVM @Inject constructor(
 ) :
     BaseVM() {
 
-    private var postsRes = MutableLiveData<ApiCallback<ProductsRes>>()
-    val posts: LiveData<ApiCallback<ProductsRes>> = postsRes
-
-    fun getPosts() {
-
+    fun getPosts() : LiveData<ApiCallback<ProductsRes>>{
+        val lst  = MutableLiveData<ApiCallback<ProductsRes>>()
         viewModelScope.launch {
-
-            if (Utils.isOnline(context)) {
-                postsRes.value = apiServiceProvider.getProducts()
-            }
+            lst.postValue(apiServiceProvider.getProducts())
         }
+        return lst
     }
 }

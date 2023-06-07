@@ -3,6 +3,7 @@ package com.yudiz.skeleton.model.api
 import android.content.Context
 import android.util.Log
 import com.yudiz.skeleton.model.data.ProductsRes
+import com.yudiz.skeleton.utils.Utils
 import dagger.Module
 import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
@@ -20,12 +21,18 @@ class ApiRepository @Inject constructor(
     private suspend fun <T> parseResponse(apiCall: suspend () -> Response<T>): ApiCallback<T> {
 
         return try {
-            val response = apiCall.invoke()
-            if (response.isSuccessful) {
-                ApiCallback.OnSuccess(response.body())
-            } else {
-                Log.e("API_ERROR", response.message())
-                ApiCallback.OnError(response.message())
+            if (Utils.isOnline(context)) {
+                val response = apiCall.invoke()
+
+                if (response.isSuccessful) {
+                    ApiCallback.OnSuccess(response.body())
+                } else {
+                    Log.e("API_ERROR", response.message())
+                    ApiCallback.OnError(response.message())
+                }
+            }
+            else{
+                ApiCallback.OnError("No internet connection")
             }
         } catch (exception: Exception) {
             Log.e("API_ERROR", exception.message.toString())
