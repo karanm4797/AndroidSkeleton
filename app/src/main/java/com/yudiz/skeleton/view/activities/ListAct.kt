@@ -15,16 +15,16 @@ class ListAct : BaseAct<ActivityListBinding, ListVM>(R.layout.activity_list) {
 
     override fun init() {
 
-        progress.show()
+        showProgress(true)
         vm.getPosts().observe(this) {
             when (it) {
                 is ApiCallback.OnSuccess -> {
-                    progress.hide()
+                    showProgress(false)
                     binding.rvProducts.adapter = ProductRVAdapter(it.data!!)
                 }
 
                 is ApiCallback.OnError -> {
-                    progress.hide()
+                    showProgress(false)
                 }
             }
         }

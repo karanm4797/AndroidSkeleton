@@ -43,9 +43,15 @@ abstract class BaseAct<binding : ViewDataBinding, VM : BaseVM>(@LayoutRes privat
 
     }
 
-    fun setProgressbar() {
+    private fun setProgressbar() {
         progress = Progress(this)
         progress.setCancelable(false)
+    }
+
+    fun showProgress(show: Boolean) {
+
+        if (show) progress.show()
+        else progress.hide()
     }
 
     fun showSnackBar(message: String, color: Int) {
