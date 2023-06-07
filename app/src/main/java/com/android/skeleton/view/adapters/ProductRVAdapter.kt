@@ -1,12 +1,12 @@
-package com.yudiz.skeleton.view.adapters
+package com.android.skeleton.view.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.android.skeleton.R
+import com.android.skeleton.databinding.ProductItemBinding
 import com.bumptech.glide.Glide
-import com.yudiz.skeleton.R
-import com.yudiz.skeleton.databinding.ProductItemBinding
-import com.yudiz.skeleton.model.data.ProductsRes
+import com.android.skeleton.model.data.ProductsRes
 
 class ProductRVAdapter(private val products: ProductsRes) :
     RecyclerView.Adapter<ProductRVAdapter.ProductViewHolder>() {

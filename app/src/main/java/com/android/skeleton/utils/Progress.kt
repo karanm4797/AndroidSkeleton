@@ -1,4 +1,4 @@
-package com.yudiz.skeleton.utils
+package com.android.skeleton.utils
 
 import android.app.Dialog
 import android.content.Context
@@ -6,7 +6,7 @@ import android.graphics.drawable.ColorDrawable
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.LinearLayout
-import com.yudiz.skeleton.R
+import com.android.skeleton.R
 
 class Progress(context: Context) {
 

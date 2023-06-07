@@ -1,4 +1,4 @@
-package com.yudiz.skeleton
+package com.android.skeleton
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

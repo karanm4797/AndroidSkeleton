@@ -1,4 +1,4 @@
-package com.yudiz.skeleton.viewmodel
+package com.android.skeleton.viewmodel
 
 import androidx.lifecycle.ViewModel
 

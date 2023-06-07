@@ -1,9 +1,9 @@
-package com.yudiz.skeleton.model.api
+package com.android.skeleton.model.api
 
 import android.content.Context
 import android.util.Log
-import com.yudiz.skeleton.model.data.ProductsRes
-import com.yudiz.skeleton.utils.Utils
+import com.android.skeleton.model.data.ProductsRes
+import com.android.skeleton.utils.Utils
 import dagger.Module
 import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext

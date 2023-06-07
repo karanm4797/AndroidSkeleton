@@ -1,4 +1,4 @@
-package com.yudiz.skeleton.utils
+package com.android.skeleton.utils
 
 import android.content.Context
 import android.content.SharedPreferences

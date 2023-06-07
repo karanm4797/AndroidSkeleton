@@ -1,14 +1,13 @@
-package com.yudiz.skeleton.viewmodel
+package com.android.skeleton.viewmodel
 
 import android.annotation.SuppressLint
 import android.content.Context
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
-import com.yudiz.skeleton.model.api.ApiCallback
-import com.yudiz.skeleton.model.api.ApiRepository
-import com.yudiz.skeleton.model.data.ProductsRes
-import com.yudiz.skeleton.utils.Utils
+import com.android.skeleton.model.api.ApiCallback
+import com.android.skeleton.model.api.ApiRepository
+import com.android.skeleton.model.data.ProductsRes
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.launch

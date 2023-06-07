@@ -1,4 +1,4 @@
-package com.yudiz.skeleton.view.activities
+package com.android.skeleton.view.activities
 
 import android.os.Bundle
 import android.view.Gravity.TOP
@@ -11,8 +11,8 @@ import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import com.google.android.material.snackbar.Snackbar
 import com.yudiz.skeleton.BR
-import com.yudiz.skeleton.utils.Progress
-import com.yudiz.skeleton.viewmodel.BaseVM
+import com.android.skeleton.utils.Progress
+import com.android.skeleton.viewmodel.BaseVM
 
 abstract class BaseAct<binding : ViewDataBinding, VM : BaseVM>(@LayoutRes private val layoutId: Int) :
     AppCompatActivity(), View.OnClickListener {

@@ -5,7 +5,7 @@
     <data>
         <variable
             name="product"
-            type="com.yudiz.skeleton.model.data.ProductsRes.ProductsResItem" />
+            type="com.android.skeleton.model.data.ProductsRes" />
     </data>
 
     <com.google.android.material.card.MaterialCardView

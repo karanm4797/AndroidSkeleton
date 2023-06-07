@@ -1,11 +1,11 @@
-package com.yudiz.skeleton.view.activities
+package com.android.skeleton.view.activities
 
 import androidx.activity.viewModels
-import com.yudiz.skeleton.R
-import com.yudiz.skeleton.databinding.ActivityListBinding
-import com.yudiz.skeleton.model.api.ApiCallback
-import com.yudiz.skeleton.view.adapters.ProductRVAdapter
-import com.yudiz.skeleton.viewmodel.ListVM
+import com.android.skeleton.R
+import com.android.skeleton.databinding.ActivityListBinding
+import com.android.skeleton.viewmodel.ListVM
+import com.android.skeleton.model.api.ApiCallback
+import com.android.skeleton.view.adapters.ProductRVAdapter
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -26,6 +26,8 @@ class ListAct : BaseAct<ActivityListBinding, ListVM>(R.layout.activity_list) {
                 is ApiCallback.OnError -> {
                     showProgress(false)
                 }
+
+                else -> {}
             }
         }
     }

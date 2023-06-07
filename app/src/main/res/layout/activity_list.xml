@@ -7,7 +7,7 @@
 
         <variable
             name="vm"
-            type="com.yudiz.skeleton.viewmodel.BaseVM" />
+            type="com.android.skeleton.viewmodel.BaseVM" />
 
         <variable
             name="click"

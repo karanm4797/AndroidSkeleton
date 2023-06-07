@@ -1,4 +1,4 @@
-package com.yudiz.skeleton.model.api
+package com.android.skeleton.model.api
 
 sealed class ApiCallback<T>(val data: T? = null, val message: String? = null) {
     class OnSuccess<T>(data: T?) : ApiCallback<T>(data)

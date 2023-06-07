@@ -1,4 +1,4 @@
-package com.yudiz.skeleton.model.api
+package com.android.skeleton.model.api
 
 
 class ApiConstants {

@@ -1,6 +1,6 @@
-package com.yudiz.skeleton.model.api
+package com.android.skeleton.model.api
 
-import com.yudiz.skeleton.model.data.ProductsRes
+import com.android.skeleton.model.data.ProductsRes
 import retrofit2.Response
 import retrofit2.http.*
 

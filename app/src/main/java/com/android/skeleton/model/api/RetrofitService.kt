@@ -1,4 +1,4 @@
-package com.yudiz.skeleton.model.api
+package com.android.skeleton.model.api
 
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder

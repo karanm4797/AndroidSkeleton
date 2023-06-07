@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:name=".BaseApp"
         android:theme="@style/Theme.Skeleton"
-        tools:targetApi="31">
+        tools:targetApi="33">
         <activity
             android:name=".view.activities.ListAct"
             android:exported="true">

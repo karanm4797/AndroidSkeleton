@@ -1,4 +1,4 @@
-package com.yudiz.skeleton.model.data
+package com.android.skeleton.model.data
 
 import com.google.gson.annotations.SerializedName
 
